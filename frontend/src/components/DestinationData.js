@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import "./DestinationStyles.css";
 
 class DestinationData extends Component {
@@ -9,7 +10,11 @@ class DestinationData extends Component {
                     <div className="des-text">
                         <h2>{this.props.heading}</h2>
                         <h3>{this.props.bestTime}</h3>
-                        <p>{this.props.text}</p>
+                        <p>{this.props.text || "Default text: Something is missing!"}</p>
+
+                        <Link to={`/destination/${this.props.city}`}>
+                <button className="explore-button">Explore More</button>
+            </Link>
                     </div>
                     <div className="image">
                         <img alt="img" src={require(`../assets/${this.props.img1}`)} />

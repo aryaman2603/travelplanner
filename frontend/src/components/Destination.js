@@ -21,10 +21,11 @@ const Destination = () => {
                     key={destination.id}
                     className={index % 2 === 0 ? "first-des" : "first-des-reverse"}
                     heading={destination.city + ", " + destination.country}
+                    city={destination.city}
                     bestTime={`Best Time to Visit: ${destination.best_months}`}
                     text={destination.description}
                     img1={destination.image_url} 
-                    img2={destination.image_url} 
+                    img2={destination.image_url2} 
                 />
             ))}
         </div>

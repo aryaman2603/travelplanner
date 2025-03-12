@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import ServicesImage from "../assets/paris.jpg";
+import ServicesImage from "../assets/services.jpg";
 import Footer from "../components/Footer";
 import Trip from "../components/Trip";
 function Services (){

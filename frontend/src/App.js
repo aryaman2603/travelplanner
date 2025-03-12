@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Services from "./routes/Services";
 import Contact from "./routes/Contact";
+import DestinationDetail from "./components/DestinationDetail";
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
           <Route path = "/about" element={<About/>}/>
           <Route path = "/services" element={<Services/>}/>
           <Route path = "/contact" element={<Contact/>}/>
+          <Route path="/destination/:city" element={<DestinationDetail />} />
         </Routes>
       </div>
     

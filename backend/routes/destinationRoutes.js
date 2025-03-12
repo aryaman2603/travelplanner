@@ -3,7 +3,7 @@ const { getAllDestinations, getDestinationById, addDestination } = require("../c
 const router = express.Router();
 
 router.get("/", getAllDestinations);
-router.get("/:id", getDestinationById);
+router.get("/:city", getDestinationById);
 router.post("/", addDestination);
 
 module.exports = router;

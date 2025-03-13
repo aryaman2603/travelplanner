@@ -6,7 +6,7 @@ import About from "./routes/About";
 import Services from "./routes/Services";
 import Contact from "./routes/Contact";
 import DestinationDetail from "./components/DestinationDetail";
-
+import SignupForm from "./components/SignupForm";
 
 export default function App() {
   return (
@@ -18,6 +18,7 @@ export default function App() {
           <Route path = "/about" element={<About/>}/>
           <Route path = "/services" element={<Services/>}/>
           <Route path = "/contact" element={<Contact/>}/>
+          <Route path="/signup" element={<SignupForm/>}/>
           <Route path="/destination/:city" element={<DestinationDetail />} />
         </Routes>
       </div>

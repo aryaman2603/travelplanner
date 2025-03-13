@@ -1,8 +1,8 @@
 import "./TripStyles.css"
 import TripData from "./TripData"
-import trip1 from "../assets/paris.jpg"
-import trip2 from "../assets/paris.jpg"
-import trip3 from "../assets/paris.jpg"
+import trip1 from "../assets/cape-town.jpg"
+import trip2 from "../assets/reykjavik.jpg"
+import trip3 from "../assets/paris2.jpg"
 function Trip(){
     return(
         <div className="trip">
@@ -11,18 +11,18 @@ function Trip(){
             <div className="tripcard">
                 <TripData
                 image={trip1}
-                heading="Bali, Indonesia"
-                text="Bali, known as the 'Island of the Gods,' is a tropical paradise in Indonesia famous for its stunning beaches, lush rice terraces, and vibrant culture. The island offers a unique blend of natural beauty and rich traditions, with ancient temples, traditional dance performances, and bustling markets. Visitors can explore Ubud's serene landscapes, surf in Kuta, or relax in the luxurious resorts of Seminyak."
+                heading="Cape Town, South Africa"
+                text="Cape Town is a breathtaking coastal city in South Africa, known for its diverse culture, stunning landscapes, and vibrant atmosphere. Dominated by the iconic Table Mountain, the city offers spectacular views, golden beaches, and historical sites like Robben Island. Adventure seekers can hike up Lion’s Head, take scenic drives along Chapman’s Peak, or visit the lush Cape Winelands. The bustling V&A Waterfront, colorful Bo-Kaap neighborhood, and abundant wildlife make Cape Town a dynamic and unforgettable travel destination."
                 />
                 <TripData
                 image={trip2}
-                heading="Kuala Lumpur, Malaysia"
-                text="Bali, known as the 'Island of the Gods,' is a tropical paradise in Indonesia famous for its stunning beaches, lush rice terraces, and vibrant culture. The island offers a unique blend of natural beauty and rich traditions, with ancient temples, traditional dance performances, and bustling markets. Visitors can explore Ubud's serene landscapes, surf in Kuta, or relax in the luxurious resorts of Seminyak."
+                heading="Reykjavik, Iceland"
+                text="Reykjavik, the capital of Iceland, is a gateway to the country’s breathtaking landscapes. This charming city is known for its colorful houses, lively arts scene, and proximity to natural wonders. Visitors can soak in the Blue Lagoon, explore the Golden Circle, or witness the Northern Lights. Reykjavik also boasts a rich Viking history, delicious Nordic cuisine, and a warm, welcoming atmosphere, making it an ideal starting point for Icelandic adventures."
                 />
                 <TripData
                 image={trip3}
                 heading="Paris, France"
-                text="Bali, known as the 'Island of the Gods,' is a tropical paradise in Indonesia famous for its stunning beaches, lush rice terraces, and vibrant culture. The island offers a unique blend of natural beauty and rich traditions, with ancient temples, traditional dance performances, and bustling markets. Visitors can explore Ubud's serene landscapes, surf in Kuta, or relax in the luxurious resorts of Seminyak."
+                text="Paris, the enchanting capital of France, is a city of romance, art, and history. Known for its iconic landmarks like the Eiffel Tower, Louvre Museum, and Notre-Dame Cathedral, the city offers endless experiences. Visitors can stroll along the Seine, enjoy world-class cuisine in charming cafés, and explore artistic treasures. With its timeless architecture, vibrant culture, and elegant ambiance, Paris remains one of the most sought-after destinations in the world."
                 />
             </div>
         </div>

@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 //import ServicesImage from "../assets/services.jpg";
 import Footer from "../components/Footer";
 import Trip from "../components/Trip";
-const ServicesImage = process.env.PUBLIC_URL + "/assets/services.jpg"
+const ServicesImage = "https://planitright.vercel.app/assets/services.jpg"
 function Services (){
     return(
         <>

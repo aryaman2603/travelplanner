@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import Destination from "../components/Destination";
 import Trip from "../components/Trip";
 import Footer from "../components/Footer";
-const heroImage = process.env.PUBLIC_URL + "/assets/12.jpg";
+const heroImage = "https://planitright.vercel.app/assets/12.jpg";
 function Home (){
     return(
         <>

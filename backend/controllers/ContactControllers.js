@@ -1,4 +1,4 @@
-const client = require("../config/db");
+const pool = require("../config/db");
 
 // Store contact form submission
 const sendMessage = async (req, res) => {
@@ -10,7 +10,7 @@ const sendMessage = async (req, res) => {
             return res.status(400).json({ error: "All fields are required." });
         }
 
-        const result = await client.query(
+        const result = await pool.query(
             `INSERT INTO contact_messages (name, email, subject, message) 
             VALUES ($1, $2, $3, $4) RETURNING *`,
             [name, email, subject, message]
@@ -27,7 +27,7 @@ const sendMessage = async (req, res) => {
 // Get all messages (for admin panel or review)
 const getMessages = async (req, res) => {
     try {
-        const result = await client.query("SELECT * FROM contact_messages ORDER BY created_at DESC");
+        const result = await pool.query("SELECT * FROM contact_messages ORDER BY created_at DESC");
         res.json(result.rows);
     } catch (err) {
         res.status(500).json({ error: "Server error: " + err.message });

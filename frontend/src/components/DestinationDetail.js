@@ -7,7 +7,8 @@ export default function DestinationDetail() {
     const [destination, setDestination] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5001/api/destinations/${city}`)
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/api/destinations/${city}`)
+
             .then(response => response.json())
             .then(data => setDestination(data))
             .catch(error => console.error("Error fetching data:", error));
@@ -29,8 +30,9 @@ export default function DestinationDetail() {
                 </div>
 
                 <div className="detail-images">
-                    <img src={require(`../assets/${destination.image_url}`)} alt={destination.city} />
-                    <img src={require(`../assets/${destination.image_url2}`)} alt={destination.city} />
+                <img src={`/assets/${destination.image_url}`} alt={destination.city} />
+                <img src={`/assets/${destination.image_url2}`} alt={destination.city} />
+
                 </div>
             </div>
 

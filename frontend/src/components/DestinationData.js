@@ -17,8 +17,8 @@ class DestinationData extends Component {
             </Link>
                     </div>
                     <div className="image">
-                        <img alt="img" src={require(`../assets/${this.props.img1}`)} />
-                        <img alt="img" src={require(`../assets/${this.props.img2}`)} />
+                    <img alt="img" src={`/assets/${this.props.img1}`} />
+                    <img alt="img" src={`/assets/${this.props.img2}`} />
                     </div>
                 </div>
             </div>

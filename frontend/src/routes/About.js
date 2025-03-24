@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import aboutImage from "../assets/night.jpg";
 import Footer from "../components/Footer";
 import AboutUs from "../components/AboutUs";
+const aboutImage = "/assets/night.jpg";
 function About (){
     return(
         <>

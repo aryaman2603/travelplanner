@@ -1,8 +1,9 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5001/api/destinations";
-const API_CONTACT_URL = "http://localhost:5001/api/contact";
-const API_SIGNUP_URL = "http://localhost:5001/api/signup";
+const API_BASE_URL = `${process.env.REACT_APP_BACKEND_URL}/api/destinations`;
+const API_CONTACT_URL = `${process.env.REACT_APP_BACKEND_URL}/api/contact`;
+const API_SIGNUP_URL = `${process.env.REACT_APP_BACKEND_URL}/api/signup`;
+
 export const getDestinations = async () => {
     const response = await axios.get(API_BASE_URL);
     return response.data;

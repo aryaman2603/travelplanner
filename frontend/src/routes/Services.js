@@ -1,8 +1,9 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import ServicesImage from "../assets/services.jpg";
+//import ServicesImage from "../assets/services.jpg";
 import Footer from "../components/Footer";
 import Trip from "../components/Trip";
+const ServicesImage = "/assets/services.jpg"
 function Services (){
     return(
         <>

@@ -6,7 +6,7 @@ const Destination = () => {
     const [destinations, setDestinations] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5001/api/destinations") // Change URL if needed
+        fetch(`${process.env.REACT_APP_BACKEND_URL}/api/destinations`)
             .then((res) => res.json())
             .then((data) => setDestinations(data))
             .catch((err) => console.error("Error fetching destinations:", err));
@@ -24,8 +24,8 @@ const Destination = () => {
                     city={destination.city}
                     bestTime={`Best Time to Visit: ${destination.best_months}`}
                     text={destination.description}
-                    img1={destination.image_url} 
-                    img2={destination.image_url2} 
+                    img1={`/assets/${destination.image_url}`} // Updated Image Path
+                    img2={`/assets/${destination.image_url2}`} // Updated Image Path
                 />
             ))}
         </div>

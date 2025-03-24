@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import AboutUs from "../components/AboutUs";
-const aboutImage = "/assets/night.jpg";
+const aboutImage = process.env.PUBLIC_URL + "/assets/night.jpg";
 function About (){
     return(
         <>

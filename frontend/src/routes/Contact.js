@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 //import ContactImage from "../assets/photo-1500835556837-99ac94a94552.avif";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
-const ContactImage = "/assets/photo-1500835556837-99ac94a94552.avif"
+const ContactImage = process.env.PUBLIC_URL + "/assets/photo-1500835556837-99ac94a94552.avif"
 function Contact (){
     return(
         <>

@@ -24,8 +24,8 @@ const Destination = () => {
                     city={destination.city}
                     bestTime={`Best Time to Visit: ${destination.best_months}`}
                     text={destination.description}
-                    img1={`/assets/${destination.image_url}`} // Updated Image Path
-                    img2={`/assets/${destination.image_url2}`} // Updated Image Path
+                    img1={destination.image_url} // Updated Image Path
+                    img2={destination.image_url2} // Updated Image Path
                 />
             ))}
         </div>

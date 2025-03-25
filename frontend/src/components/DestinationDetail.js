@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "./DestinationDetailStyles.css"; // Import new CSS file
 
 export default function DestinationDetail() {
     const { city } = useParams();
+    const navigate = useNavigate();
     const [destination, setDestination] = useState(null);
 
     useEffect(() => {

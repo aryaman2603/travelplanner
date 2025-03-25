@@ -9,16 +9,16 @@ const Footer = () =>{
                     <p>Choose your favourite destination</p>
                 </div>
                 <div>
-                <a href="/">
+                <a href="https://www.facebook.com">
                 <i className="fa-brands fa-facebook-square"></i>
                 </a>
-                <a href="/">
+                <a href="https://www.instagram.com">
                 <i className="fa-brands fa-instagram-square"></i>
                 </a>
-                <a href="/">
+                <a href="https://www.behance.net">
                 <i className="fa-brands fa-behance-square"></i>
                 </a>
-                <a href="/">
+                <a href="https://x.com">
                 <i className="fa-brands fa-twitter-square"></i>
                 </a>
                 </div>
@@ -26,7 +26,7 @@ const Footer = () =>{
             <div className="bottom">
                 <div>
                 <h4>Community</h4>
-                <a href="/">GitHub</a>
+                <a href="https://github.com/aryaman2603/travelplanner">GitHub</a>
                 <a href="/">Issues</a>
                 <a href="/">Project</a>
                 </div>
@@ -34,7 +34,7 @@ const Footer = () =>{
                 <h4>Help</h4>
                 <a href="/">Support</a>
                 <a href="/">Troubleshooting</a>
-                <a href="/">Contact Us</a>
+                <a href="/contact">Contact Us</a>
                 </div>
                 <div>
                 <h4>Others</h4>

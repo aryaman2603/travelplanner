@@ -18,6 +18,7 @@ export default function DestinationDetail() {
 
     return (
         <div className="destination-detail">
+            <i className="fa-solid fa-house home-icon" onClick={() => navigate("/")}></i>
             <h1>{destination.city}, {destination.country}</h1>
             <p>{destination.description}</p>
 
